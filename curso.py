@@ -38,13 +38,15 @@ class Curso(CursoBase):
         if self.resumo:
             info_curso_base += f"\nResumo: \n{self.resumo}"
             return info_curso_base
-
+            
 curso3 = Curso("Python", "Entendendo a Orientação a Objetos", 'Alura', 12)
 curso4 = Curso("Python", "Avançando na Orientação a Objetos", 'Alura', 10)
 curso5 = Curso("IA Generativa", "ChatGPT: Desvendando a IA em conversas e suas aplicaçòes", 'Alura', 8)
 curso6 = Curso("IA Generativa", "ChatGPT: Otimizando a qualidade dos resultados", 'Alura', 8)
 curso7 = Curso("IA Generativa", "ChatGPT e programação: aumente sua produtividade", 'Alura', 8)
 curso8 = Curso("Data Science", "Python para Data science: primeiros passos", 'Alura', 10)
+curso9 = Curso("Data Science", "Python para Data science: trabalhado c/ funções, estruturas de dados e exceções", 'Alura', 8)
+curso10 = Curso("Data Science","Numpy: Análise numérica eficiente com Python", 'Alura', 8) 
 
 
 resumo1 = Resumo("Instalação do Python 3; Lidando com a entrada do usuário; Testando valores; "
@@ -55,8 +57,11 @@ resumo2 = Resumo("Preparando o jogo da forca; Manipulando strings; conhecendo e 
                  "Conhecendo e trabalhando com tuplas;Implementando o encerramento do jogo;"
                  "Escrita e leitura de arquivos; Melhorando o código e a apresentação")
 
+
 curso1 = Curso("Python", "Começando com a Linguagem", 'Alura', 12, resumo1)
 curso2 = Curso("Python", "Avançando na Linguagem", 'Alura', 12, resumo2)
+
+
 
 curso2.iniciar_curso()
 curso2.concluir_curso()
